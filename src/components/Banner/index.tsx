@@ -22,7 +22,7 @@ const Banner = ({
   ribbonSize = 'normal',
   ribbonColor = 'primary'
 }: BannerProps) => (
-  <S.Wrapper ribbon={ribbon}>
+  <S.Wrapper>
     <S.Image src={img} role="img" aria-label={title} />
     {!!ribbon && (
       <Ribbon color={ribbonColor} size={ribbonSize}>
