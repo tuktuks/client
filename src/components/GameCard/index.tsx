@@ -11,7 +11,7 @@ import Button from 'components/Button'
 export type GameCardProps = {
   title: string
   developer: string
-  image: string
+  img: string
   price: string
   promotionalPrice?: string
   favorite?: boolean
@@ -23,7 +23,7 @@ export type GameCardProps = {
 
 const GameCard = ({
   developer,
-  image,
+  img,
   price,
   title,
   promotionalPrice,
@@ -34,7 +34,7 @@ const GameCard = ({
   ribbonColor = 'primary'
 }: GameCardProps) => (
   <S.Wrapper>
-    <S.ImageBox src={image} role="img" aria-label={title} />
+    <S.ImageBox src={img} role="img" aria-label={title} />
     {!!ribbon && (
       <Ribbon color={ribbonColor} size={ribbonSize}>
         {ribbon}
