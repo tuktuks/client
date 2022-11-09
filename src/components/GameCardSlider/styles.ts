@@ -17,7 +17,6 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-slide > div {
       margin: 0 ${theme.spacings.xxsmall};
       flex: 1 0 auto;
-      height: 100%;
     }
     .slick-list {
       margin: 0 -${theme.spacings.xxsmall};

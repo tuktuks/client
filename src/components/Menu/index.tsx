@@ -41,7 +41,7 @@ const Menu = ({ username }: MenuProps) => {
         <S.IconWrapper>
           <ShoppingCartIcon aria-label="Open Shopping Cart" />
         </S.IconWrapper>
-        {!!username && (
+        {!username && (
           <MediaMatch greaterThan="medium">
             <Button>Sign in</Button>
           </MediaMatch>
